@@ -1,0 +1,12 @@
+<ng-container *ngIf="isActive">
+  <ng-container *ngIf="activeDirection === 'asc'">
+    <i class="fa-solid fa-arrow-up sort-icon-down"></i>
+  </ng-container>
+  <ng-container *ngIf="activeDirection === 'desc'">
+    <i class="fa-solid fa-arrow-down sort-icon-up"></i>
+  </ng-container>
+</ng-container>
+
+<ng-container *ngIf="!isActive">
+  <i class="fa-solid fa-sort sort-icon"></i>
+</ng-container>

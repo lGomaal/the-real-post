@@ -1,0 +1,35 @@
+//
+// Card
+//
+
+// Base
+.card {
+
+  &.danger-left{
+    border-left: 6px solid $danger;
+  }
+
+  &.success-left {
+    border-left: 6px solid $success;
+  }
+
+  // Header
+  .card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .card-header-logo{
+      width: 3rem;
+    }
+
+    .actions-icon{
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 0.3rem 0.2rem;
+      &:hover{
+        color: $primary;
+      }
+    }
+  }
+}

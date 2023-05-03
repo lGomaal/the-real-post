@@ -1,0 +1,43 @@
+<section id="one-title-stepper">
+  <header>
+    <div class="top-section">
+      <a
+        *ngIf="backLink"
+        [routerLink]="backLink"
+        class="btn btn-primary back-button d-inline-block"
+        ><i class="fa-solid fa-arrow-left"></i
+      ></a>
+
+      <div class="mid-section">
+        <h4 class="title">
+          {{ oneTitleStepperService._StepTitle$.value | titlecase }}
+        </h4>
+        <small class="text-muted"
+          >Step {{ oneTitleStepperService.currentStep$ | async }} /
+          {{ oneTitleStepperService._numberOfSteps$.value }}
+        </small>
+      </div>
+
+      <!-- <div class="side-info-container">
+          <ng-content select=".side-info"> </ng-content>
+        </div> -->
+    </div>
+
+    <ngb-progressbar
+      type="primary"
+      [value]="oneTitleStepperService.loadingPercent$ | async"
+      height="6px"
+      style="border-radius: 0.1rem">
+    </ngb-progressbar>
+  </header>
+
+  <section
+    id="stepper-content"
+    class="container-lg">
+    <ng-content select="autocops-one-title-stepper-step"> </ng-content>
+
+    <ng-content select="[autocopsOneTitleStepNext]"> </ng-content>
+
+    <ng-content select="[autocopsOneTitleStepPrev]"> </ng-content>
+  </section>
+</section>

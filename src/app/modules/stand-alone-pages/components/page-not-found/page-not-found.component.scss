@@ -1,0 +1,21 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins/_breakpoints";
+
+.page-container {
+  background-image: url("../../../../../assets/media/error/page-not-found.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-content {
+  padding: 10rem 5rem;
+}
+
+@include media-breakpoint-down(lg) {
+  .page-content {
+    padding: 2rem;
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../../../../assets/scss/bootstrap-theme/bootstrap.custom.vaiables";
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+.input-group {
+  margin-top: 1rem;
+}
+
+.btn-calendar {
+  border-radius: 0 0.25rem 0.25rem 0;
+  &:hover,
+  &:focus,
+  &:active {
+    .fa-calendar-days {
+      color: $primary;
+    }
+
+    .fa-xmark {
+      color: $danger;
+    }
+  }
+}
+
+.form-control[readonly] {
+  background-color: $white;
+}

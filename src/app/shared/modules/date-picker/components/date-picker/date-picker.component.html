@@ -1,0 +1,40 @@
+<div class="input-group">
+  <input
+    type="text"
+    class="form-control"
+    [matDatepicker]="picker"
+    readonly
+    (click)="picker.open()"
+    [formControl]="dateFormContorl"
+    [max]="datePickerConfig!.maxLimit"
+    [min]="datePickerConfig!.minLimit" />
+  <div class="input-group-append">
+    <button
+      (click)="dateFormContorl.reset()"
+      *ngIf="datePickerConfig.clearButton"
+      type="button"
+      class="btn btn-light btn-calendar">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <button
+      type="button"
+      (click)="picker.open()"
+      class="btn btn-light btn-calendar">
+      <i class="fa-solid fa-calendar-days"></i>
+    </button>
+  </div>
+</div>
+
+<mat-form-field
+  hidden
+  class="mat-form-feild-picker">
+  <input
+    hidden
+    matInput />
+  <mat-datepicker
+    #picker
+    [startView]="datePickerConfig.startView"
+    [hidden]="false"
+    [touchUi]="datePickerConfig.touchUi"></mat-datepicker>
+</mat-form-field>

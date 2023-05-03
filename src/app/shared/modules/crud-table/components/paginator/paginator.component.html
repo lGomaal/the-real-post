@@ -1,0 +1,51 @@
+<!-- start: Paginator -->
+<div class="d-flex flex-wrap py-2 mr-3">
+  <ngb-pagination
+    [collectionSize]="paginator.total"
+    [(page)]="paginator.page"
+    [maxSize]="4"
+    [rotate]="true"
+    [boundaryLinks]="true"
+    [pageSize]="paginator.pageSize"
+    (pageChange)="pageChange($event)"></ngb-pagination>
+</div>
+<div class="d-flex align-items-center py-3">
+  <!-- begin: loading -->
+  <div
+    class="d-flex align-items-center mx-2"
+    *ngIf="isLoading">
+    <div class="mr-2 text-muted">Loading...</div>
+    <div class="spinner-border text-primary mr-10"></div>
+  </div>
+  <!-- end: loading -->
+
+  <!-- begin: pageSize -->
+  <select
+    class="form-select form-select-sm font-weight-bold mr-4 border-0 bg-light false"
+    style="width: 75px"
+    [(ngModel)]="paginator.pageSize"
+    (change)="sizeChange()">
+    <option
+      class="btn"
+      *ngFor="let ps of pageSizes">
+      {{ ps }}
+    </option></select
+  ><span
+    *ngIf="paginator.total !== 0"
+    class="react-bootstrap-table-pagin ation-total"
+    >&nbsp;Page {{ paginator.page }} Showing&nbsp;{{
+      paginator.pageSize > paginator.currentPageSizeData
+        ? paginator.currentPageSizeData
+        : paginator.pageSize
+    }}
+    out of&nbsp;{{ paginator.total }}</span
+  >
+
+  <span
+    *ngIf="paginator.total === 0"
+    class="react-bootstrap-table-pagin ation-total"
+    >&nbsp;Their is no data to be Shown</span
+  >
+  <!-- end: pageSize -->
+</div>
+<!-- end: Paginator -->

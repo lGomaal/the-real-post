@@ -1,0 +1,16 @@
+.form-label {
+  margin-bottom: 0.2rem;
+}
+
+.radio-group {
+  padding: 7px 0 7px 0;
+}
+
+.remove-disabled-color {
+  background-color: #ffffff !important;
+}
+
+.form-check > *,
+.form-switch > * {
+  cursor: pointer;
+}
