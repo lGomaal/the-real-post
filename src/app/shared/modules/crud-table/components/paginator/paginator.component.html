@@ -11,9 +11,7 @@
 </div>
 <div class="d-flex align-items-center py-3">
   <!-- begin: loading -->
-  <div
-    class="d-flex align-items-center mx-2"
-    *ngIf="isLoading">
+  <div class="d-flex align-items-center mx-2" *ngIf="isLoading">
     <div class="mr-2 text-muted">Loading...</div>
     <div class="spinner-border text-primary mr-10"></div>
   </div>
@@ -25,9 +23,7 @@
     style="width: 75px"
     [(ngModel)]="paginator.pageSize"
     (change)="sizeChange()">
-    <option
-      class="btn"
-      *ngFor="let ps of pageSizes">
+    <option class="btn" *ngFor="let ps of pageSizes">
       {{ ps }}
     </option></select
   ><span

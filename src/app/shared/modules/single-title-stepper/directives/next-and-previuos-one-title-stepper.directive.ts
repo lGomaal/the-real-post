@@ -2,15 +2,15 @@ import { OneTitleStepperService } from './../services/one-title-stepper-service/
 import { Directive, HostListener, Input } from '@angular/core';
 
 @Directive({
-  selector: '[autocopsOneTitleStepNext], [autocopsOneTitleStepPrev]',
+  selector: '[eStatmentOneTitleStepNext], [eStatmentOneTitleStepPrev]',
 })
 export class NextAndPreviuosOneTitleStepperDirective {
-  @Input('autocopsOneTitleStepNext') next: any;
-  @Input('autocopsOneTitleStepPrev') prev: any;
+  @Input('eStatmentOneTitleStepNext') next: unknown;
+  @Input('eStatmentOneTitleStepPrev') prev: unknown;
 
   constructor(private oneTitleStepperService: OneTitleStepperService) {}
 
-  @HostListener('click', ['$event']) listen(e: any) {
+  @HostListener('click', ['$event']) listen() {
     if ('next' in this) {
       this.oneTitleStepperService.nextPressed();
     }

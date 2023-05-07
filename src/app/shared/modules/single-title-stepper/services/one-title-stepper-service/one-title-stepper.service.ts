@@ -24,7 +24,7 @@ export class OneTitleStepperService implements OnDestroy {
   public subscriptions: Subscription[] = [];
   constructor(private changeDetectorRef: ChangeDetectorRef) {
     // listen to the incoming steps component list for the stepper and initialize the current step.
-    this._stepComponentList$.pipe(skip(1), take(1)).subscribe(_ => {
+    this._stepComponentList$.pipe(skip(1), take(1)).subscribe(() => {
       this._numberOfSteps$.next(this._stepComponentList$.value.length);
       this.initialCurrentStep();
     });

@@ -2,7 +2,7 @@ import { PaginatorState } from './paginator.model';
 import { SortState } from './sort.model';
 
 export interface ITableState {
-  filter: {};
+  filter: object;
   paginator: PaginatorState;
   sorting: SortState;
   searchTerm: string;

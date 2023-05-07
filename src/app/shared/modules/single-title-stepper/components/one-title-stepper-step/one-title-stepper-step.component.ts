@@ -1,15 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'autocops-one-title-stepper-step',
+  selector: 'e-statment-one-title-stepper-step',
   templateUrl: './one-title-stepper-step.component.html',
   styleUrls: ['./one-title-stepper-step.component.scss'],
 })
-export class OneTitleStepperStepComponent implements OnInit {
-  @Input() isActive: boolean = false;
-  @Input() stepName: string;
-
-  constructor() {}
-
-  ngOnInit(): void {}
+export class OneTitleStepperStepComponent {
+  @Input() isActive = false;
+  @Input() stepName = '';
 }
