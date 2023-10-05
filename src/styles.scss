@@ -1,20 +1,20 @@
 // matrial themeing
-@import "assets/scss/material-theme/custom-matiral-theme.scss";
+@import 'assets/scss/material-theme/custom-matiral-theme.scss';
 // bootstrap
-@import "assets/scss/bootstrap-theme/bootstrap.theme";
+@import 'assets/scss/bootstrap-theme/bootstrap.theme';
 
 /* Font awesome */
-@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 
 // action icons
-@import "assets/scss/global/actions-icon";
+@import 'assets/scss/global/actions-icon';
 
 // ng-select theme
 // @import "assets/scss/ng-select-theme/ng-select.theme.scss";
 
-@import "assets/scss/global/ribbons";
+@import 'assets/scss/global/ribbons';
 
-@import "assets/scss/swal-theme/swal";
+@import 'assets/scss/swal-theme/swal';
 
 * {
   margin: 0;
@@ -28,6 +28,6 @@ body {
 }
 
 body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
   transition: all 0.2s linear;
 }
