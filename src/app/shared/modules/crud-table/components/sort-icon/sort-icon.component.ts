@@ -10,7 +10,7 @@ import {
 import { SortDirection } from '../../models/sort.model';
 
 @Component({
-  selector: 'e-statment-sort-icon',
+  selector: 'trp-sort-icon',
   templateUrl: './sort-icon.component.html',
   styleUrls: ['./sort-icon.component.scss'],
 })

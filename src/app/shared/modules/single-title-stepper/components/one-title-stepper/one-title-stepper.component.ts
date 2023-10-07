@@ -9,7 +9,7 @@ import {
 import { OneTitleStepperStepComponent } from '../one-title-stepper-step/one-title-stepper-step.component';
 
 @Component({
-  selector: 'e-statment-one-title-stepper',
+  selector: 'trp-one-title-stepper',
   templateUrl: './one-title-stepper.component.html',
   styleUrls: ['./one-title-stepper.component.scss'],
   providers: [OneTitleStepperService],

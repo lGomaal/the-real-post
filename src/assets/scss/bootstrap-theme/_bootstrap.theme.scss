@@ -1,15 +1,18 @@
 // custom variables to overRide the original ones
-@import "bootstrap.custom.vaiables";
+@import 'bootstrap.custom.vaiables';
+@import 'sketchy-theme/variables';
 
 /* Importing Bootstrap SCSS file. */
-@import "bootstrap/scss/bootstrap";
+@import 'bootstrap/scss/bootstrap';
 
 // here i will list the over riden classes of bootstrap that i wanted
-@import "bootstrap.custom.navbar";
-@import "bootstrap.custom.table";
-@import "bootstrap.custom.modal";
-@import "bootstrap.custom.dropdown";
-@import "bootstrap.custom.card";
-@import "bootstrap.custom.form";
-@import "bootstrap.custom.switch";
-@import "bootstrap.custom.swal";
+@import 'bootstrap.custom.navbar';
+@import 'bootstrap.custom.table';
+@import 'bootstrap.custom.modal';
+@import 'bootstrap.custom.dropdown';
+@import 'bootstrap.custom.card';
+@import 'bootstrap.custom.form';
+@import 'bootstrap.custom.switch';
+@import 'bootstrap.custom.swal';
+
+@import 'sketchy-theme/bootswatch';

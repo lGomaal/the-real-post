@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'e-statment-main',
+  selector: 'trp-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.scss']
 })

@@ -3,7 +3,7 @@ import { FormControl, UntypedFormControl } from '@angular/forms';
 import { DatePickerConfig } from 'src/app/shared/types/date-picker.types';
 
 @Component({
-  selector: 'e-statment-date-picker',
+  selector: 'trp-date-picker',
   templateUrl: './date-picker.component.html',
   styleUrls: ['./date-picker.component.scss'],
 })

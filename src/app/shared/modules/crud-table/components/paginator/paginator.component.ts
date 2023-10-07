@@ -2,7 +2,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { PageSizes, PaginatorState } from '../../models/paginator.model';
 
 @Component({
-  selector: 'e-statment-paginator',
+  selector: 'trp-paginator',
   templateUrl: './paginator.component.html',
   styleUrls: ['./paginator.component.scss'],
 })
