@@ -1,0 +1,77 @@
+@import '/node_modules/bootstrap/scss/functions';
+@import '/node_modules/bootstrap/scss/variables';
+@import '/node_modules/bootstrap/scss/mixins';
+
+.registration-container {
+  display: flex;
+
+  .left-part {
+    height: 100vh;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-image: url('/assets/media/images/matrix-bg.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    .content {
+      color: #fff;
+      position: relative;
+      top: -5rem;
+    }
+  }
+
+  .form-part {
+    height: 100vh;
+    flex: 1 1 auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+
+    .sub-header {
+      align-self: flex-start;
+      display: flex;
+      justify-content: space-evenly;
+      .logo {
+        width: 9rem;
+      }
+
+      .text-content {
+        align-self: flex-end;
+        font-size: 30px;
+        color: $gray-600;
+      }
+    }
+
+    form {
+      width: 100%;
+
+      .form-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .registration-container {
+    .left-part {
+      display: none;
+    }
+
+    .form-part {
+      .sub-header {
+        align-self: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+    }
+  }
+}
