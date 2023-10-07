@@ -1,0 +1,13 @@
+.back-button {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  &:hover,&:active,&:focus{
+    color: $primary;
+  }
+}
+
+.modal-body{
+  > p{
+    word-wrap: break-word;
+  }
+}

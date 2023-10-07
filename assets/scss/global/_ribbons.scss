@@ -1,0 +1,77 @@
+.ribbon {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+
+  &.success{
+    &::before,
+    &::after{
+      border: 5px solid darken($success, $amount: 10%);
+    }
+
+    span{
+      background-color: $success;
+    }
+  }
+
+  &.danger {
+  &::before,
+    &::after {
+      border: 5px solid darken($danger, $amount: 10%);
+    }
+
+    span {
+      background-color: $danger;
+    }
+  }
+
+  &::before,&::after{
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  }
+
+  &.ribbon-top-right {
+    top: -10px;
+    right: -10px;
+
+    &::before,
+    &::after{
+      border-top-color: transparent;
+      border-left-color: transparent;
+    }
+
+    &::before{
+      top: 0;
+      left: 0;
+    }
+
+    &::after{
+      bottom: 0;
+      right: 0;
+    }
+
+    span {
+      left: -1px;
+      top: 18px;
+      transform: rotate(45deg);
+    }
+  }
+
+  span {
+    position: absolute;
+    display: block;
+    width: 130px;
+    padding: 8px 0;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    color: #fff;
+    /* font: 700 18px/1 "Lato", sans-serif; */
+    text-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.01rem;
+  }
+}

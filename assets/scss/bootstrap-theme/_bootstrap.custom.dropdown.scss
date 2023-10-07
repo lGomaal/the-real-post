@@ -1,0 +1,38 @@
+.dropdown{
+  transition: none;
+
+  .dropdown-toggle{
+
+    &::after {
+      position: relative;
+      top: 2px;
+    }
+
+    &.remove-arrow::after{
+      content: none;
+    }
+  }
+
+  .dropdown-menu{
+    li{
+      .dropdown-item{
+        i{
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+
+
+@include media-breakpoint-up (md){
+  .nav-end{
+    .dropdown-menu[data-bs-popper] {
+      top: 100%;
+      right: 0;
+      left: auto;
+      margin-top: 0.125rem;
+    }
+  }
+}

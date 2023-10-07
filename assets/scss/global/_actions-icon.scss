@@ -1,0 +1,12 @@
+
+.action-icon:hover,
+.action-icon:focus,
+.action-icon:active {
+  color: $primary;
+}
+
+.action-icon {
+  color: $gray-700;
+  font-size: 1.29rem;
+  display: inline-block;
+}

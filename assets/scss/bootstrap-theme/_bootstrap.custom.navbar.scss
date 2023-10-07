@@ -1,0 +1,26 @@
+.nav {
+  gap: 1rem;
+}
+.nav-tabs {
+  border-bottom: 2px solid $bg-primary-light;
+  .nav-link.active,
+  .nav-link {
+    border: none;
+    color: $gray-600;
+  }
+
+  .nav-link:hover {
+    color: $primary;
+  }
+
+  .nav-link.active {
+    border-bottom: 3px solid $primary;
+    color: $primary;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .nav {
+    gap: 0;
+  }
+}
