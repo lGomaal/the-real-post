@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "theRealPost": {
+    "the-real-post": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
